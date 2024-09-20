@@ -1,0 +1,381 @@
+.viewDetail-container {
+    padding: 2rem;
+    background-color: #e8dfc9;
+    display: flex;
+    gap: 2rem;
+    color: #eedf93;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3rem;  
+}
+
+.book{
+    width: 130%;
+    margin-right: -193px; 
+}
+
+.loading {
+    color: #676f5c;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.book-container {
+    background-color: #88917a;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 62%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 0cap;
+    border: 7px solid #4c5a46;
+}
+
+img {
+    border-radius: 0.5rem;
+    max-width: 60%;
+    max-height: 800px;
+    object-fit: cover;
+}
+
+.cart-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #1d65ec;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.cart-btn.out-of-stock:hover {
+    color: gray;
+    transform: none;
+}
+
+.cart-btn.out-of-stock {
+    color: gray;
+    cursor: not-allowed;
+}
+.cart-btn:disabled {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.out-of-stock-message {
+    font-weight:bold;
+    color: red;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 70%;
+}
+
+.stock-exist{
+        color: #123004;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-right: 70%;
+}
+
+.icon-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 20rem;
+}
+
+.heart-btn,
+.cart-btn {
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 3rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.heart-btn {
+    color: #e1c109;
+}
+
+.update-btn,.delete-btn {
+    background-color:transparent;
+    cursor: pointer;
+    border-radius: 10%;
+    border: none;
+}
+
+.delete-btn{
+    color: #e91e07;
+    font-size: 3.7cap;
+}
+
+.delete-btn:hover{
+    color: #6f0f05;
+}
+
+.update-btn{
+    font-size: 2.7cap;
+    border: none;
+    cursor: pointer;
+    color: #27d117;
+    transition: color 0.3s, transform 0.3s;
+    padding-left: 32%;
+}
+
+.update-btn:hover{
+    color: #115005;
+}
+
+.heart-btn:hover {
+    transform: translateY(-5px);
+    color: #9c9c1d;
+}
+
+
+.cart-btn:hover {
+    transform: translateY(-5px);
+    color: #131394;
+}
+
+.detailsBook {
+    padding: 1rem;
+    width: 100%;
+}
+
+.title_container {
+    color: #2a3021;
+    margin-top: 0cap;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1.9rem;
+}
+
+.author-container {
+    color: #2a3021;
+    margin-top: 1rem;
+    text-align: start;
+}
+
+.desc-container {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #978c71;
+    text-align: start;
+    /* width: 156%; */
+}
+
+.language {
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: #978c71;
+}
+
+.grlg {
+    margin-inline-end: 0.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #2a3021;
+    text-align: start;
+}
+
+.prc {
+    font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+
+    .viewDetail-container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .book-container {
+        margin-top: 2cap;
+        width: 40%;
+        max-height: auto;
+    }
+
+   .detailsBook {
+       width: 100%;
+   }
+
+   .title_container {
+       font-size: 2rem;
+   }
+
+   .author-container,
+   .desc-container,
+   .language,
+   .price {
+       font-size: 0.9rem;
+   }
+
+   .icon-btn {
+       flex-direction: row;
+       padding-bottom: 0;
+       gap: 0.5rem;
+   }
+
+   .heart-btn,
+   .cart-btn {
+       font-size: 2rem;
+   }
+
+    .update-btn,.delete-btn {
+        font-size: 2.5rem;
+        padding-left: 0;
+    }
+}
+@media (max-width: 1077px) {
+    .viewDetail-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: flex-start;
+        width: 60%;
+    }
+
+    .book-container {
+        width: 80%;
+        max-height: auto;
+    }
+
+    .detailsBook {
+        width: 100%;
+    }
+
+    .title_container {
+        font-size: 2rem;
+    }
+
+    .author-container,
+    .desc-container,
+    .language,
+    .price {
+        font-size: 0.9rem;
+        width: 127%;
+    }
+
+    .icon-btn {
+        flex-direction: row;
+        padding-bottom: 0;
+        gap: 0.5rem;
+    }
+
+    .heart-btn,
+    .cart-btn {
+        font-size: 2rem;
+    }
+
+  .update-btn,
+  .delete-btn {
+      font-size: 2.8rem;
+      padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .viewDetail-container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .book-container {
+        width: 50%;
+        max-height: auto;
+    }
+
+    .detailsBook {
+        width: 100%;
+    }
+
+    .title_container {
+        font-size: 2rem;
+    }
+
+    .author-container,
+    .desc-container,
+    .language,
+    .price {
+        font-size: 0.9rem;
+        width: 160%;
+    }
+
+    .icon-btn {
+        flex-direction: row;
+        padding-bottom: 0;
+        gap: 0.5rem;
+    }
+
+    .heart-btn,
+    .cart-btn {
+        font-size: 2rem;
+    }
+
+    .update-btn{
+        font-size: 2rem;
+    }
+
+  .update-btn,.delete-btn {
+      font-size: 1.5rem;
+      padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+    .viewDetail-container {
+        padding: 1rem;
+    }
+
+    .book-container {
+        width: 65%;
+        padding: 0.5rem;
+    }
+
+    .detailsBook {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .title_container {
+        font-size: 1.5rem;
+    }
+
+    .author-container,
+    .desc-container,
+    .language,
+    .price {
+        font-size: 0.8rem;
+        width: 144%;
+    }
+
+    .icon-btn {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .heart-btn,
+    .cart-btn {
+        font-size: 1.5rem;
+    }
+
+    .update-btn,
+    .delete-btn {
+    font-size: 1.3rem;
+    padding-left: 0;
+}
+.update-btn {
+    font-size: 1.4rem;
+}
+}
+

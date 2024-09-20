@@ -1,0 +1,15 @@
+.footer-container{
+    bottom: 0 !important;
+    background-color: #e8dfc9;
+    color: #2a3021;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    left: 0;
+    width: 100%;
+    
+}
+.footer{
+    font-size: 13px;
+    text-align: center;
+}

@@ -1,0 +1,133 @@
+.all-orders-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.loading{
+    color: #676f5c;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #2a3021;
+    margin-bottom: 20px;
+}
+
+.orders-table {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    padding: 20px;
+   
+}
+
+.table-header {
+    background-color: #676f5c;
+    color: #e8dfc9;
+}
+
+.table-header th {
+    padding: 1%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.table-body{
+    text-align: center;
+    color: #332401;
+    font-family: math;
+    /* font-weight: bold; */
+    font-family: Arial, sans-serif;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #f0e8b0;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+.orders-status {
+    color: #a2bca8;
+    font-size: 1em;
+    font-weight:bold;
+}
+
+.check{
+    background: none;
+    border: none;
+    cursor: pointer ;
+    font-size: 1.2em;
+    color: #3e8c50;
+    padding: 8px;
+}
+
+.book-info {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    .orders-table {
+        font-size: 16px;
+    }
+
+    .table-header th,
+    tbody td {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .orders-table {
+        font-size: 14px;
+    }
+
+    .table-header th,
+    tbody td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .orders-table {
+        font-size: 10px;
+    }
+
+    .table-header th,
+    tbody td {
+        padding: 6px;
+    }
+
+    .check {
+        font-size: 1em;
+        padding: 6px;
+    }
+
+    .book-info {
+        font-size: 12px;
+    }
+}
+
+.error-message {
+    text-align: center;
+    font-size: 18px;
+    color: #5d0808;
+}

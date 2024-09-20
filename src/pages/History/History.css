@@ -1,0 +1,153 @@
+body {
+    background-color: #e8dfc9;
+    color: #e8dfc9;
+    font-family: Arial, sans-serif;
+}
+
+.loading {
+    color: #676f5c;
+    padding-top: 20%;
+    text-align: center;
+}
+
+.history-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.no-history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #676f5c;
+    padding-top: 10%;
+    text-align: center;
+    margin-bottom: 20%;
+    background-color: transparent;
+}
+
+.no-history h1{
+    font-size: 2rem;
+    margin-top: 7%;
+}
+
+.history-table{
+    font-size: 100%;
+    padding: 10px;
+    background-color: #7b856e;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgb(0, 0, 0);
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e8dfc9;
+    margin-bottom: 20px;
+}
+
+.header-item {
+    flex: 1 1 20%;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+}
+
+.row-table{
+        flex-direction: row-reverse;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e8dfc9;
+}
+
+.order-item {
+    flex: 1 1 20%;
+    text-align: center;
+    min-width: 120px;
+}
+
+.book-details {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.status.Delivered {
+    color: #ff6f61;
+}
+
+.book-title {
+    font-size: 16px;
+}
+
+.order-item {
+    font-size: 14px;
+}
+
+.status {
+    font-weight: bold;
+    color:#033902;
+}
+
+@media (max-width: 768px) {
+    .history-container {
+        padding: 10px;
+        width: 80%;
+    }
+
+    .no-history h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-item,
+    .order-item {
+        flex: 1 1 25%;
+        min-width: 100px;
+    }
+
+    .book-title {
+        font-size: 14px;
+    }
+
+    .order-item {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-container {
+        padding: 5px;
+        width: 90%;
+    }
+
+    .no-history h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-item,
+    .order-item {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .book-details {
+        padding-left: 10px;
+    }
+
+    .book-title {
+        font-size: 12px;
+    }
+
+    .order-item {
+        font-size: 10px;
+    }
+}

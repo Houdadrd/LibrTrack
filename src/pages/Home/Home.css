@@ -1,0 +1,22 @@
+.home-container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #e8dfc9;
+   
+    }
+
+.hero-container {
+    width: 100%;
+     margin-bottom: 40px; 
+}
+
+.recent-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: left;
+    color: #433e36;
+    font-size: 180%;
+} 
+

@@ -1,0 +1,82 @@
+.allBooks-container {
+    border-radius: 0.25rem;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8dfc9;
+}
+.loading {
+    color: #676f5c;
+    padding-top: 20%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 4%;
+}
+
+.allBooks {
+    text-align: left;
+    margin-left: 2%;
+    align-self: flex-start;
+}
+
+.book-card-container {
+    gap: 0.7rem;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 4%;
+    min-width: 90%;
+    max-width: 10%;
+}
+
+@media (max-width: 1050px) {
+    .book-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .book-card-container {
+        align-content: flex-start;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 300px) {
+    .book-card-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+.category-buttons {
+    margin-top: 4%;
+    margin-bottom: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-button {
+    background-color: #828b74; 
+    color: #e8dfc9;
+    border: 5px solid #5f6d59;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-button.active,
+.category-button:hover {
+    background-color: #444f36;
+    color: #b7a985;
+}
